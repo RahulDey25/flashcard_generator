@@ -1,3 +1,20 @@
+<h1 align="center"> FLASHCARD GENERATOR <h1>
+<p align="center">A React.js-powered platform for crafting personalized flashcards</p>
+
+
+<h2>
+Check out the demonstration!
+</h2>
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
