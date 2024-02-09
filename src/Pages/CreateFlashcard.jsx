@@ -3,7 +3,8 @@ import React, { useState, useRef } from "react";
 import { toast } from "react-toastify";
 import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
 import FlashCardSchema from "../Validations/schema/FlashcardSchema";
-import { nanoid } from "nanoid";
+// import { nanoid } from "nanoid";
+import uniqueid from "uniqid";
 import { AiOutlinePlus, AiOutlineUpload, AiOutlineEdit, AiOutlineDelete, AiOutlineClose } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import TextError from "../Validations/customErrorForm/TextError";
@@ -51,13 +52,13 @@ const CreateFlashCard = () => {
     // Here we are rendering the form using Formik
     return (
         <Formik initialValues={{
-            id: nanoid(),
+            id: uniqueid(),
             groupname: "",
             groupdescription: "",
             groupImg: null,
             cards: [
                 {
-                    cardid: nanoid(),
+                    cardid: uniqueid(),
                     cardname: "",
                     carddescription: "",
                     cardImage: null,
@@ -274,7 +275,7 @@ const CreateFlashCard = () => {
 
                                         <div className="py-2">
                                             <button type="button" onClick={() => arrayHelper.push({
-                                                cardid: nanoid(),
+                                                cardid: uniqueid(),
                                                 cardname: "",
                                                 carddescription: "",
                                                 cardImage: null,
