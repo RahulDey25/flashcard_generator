@@ -235,7 +235,7 @@ const CreateFlashCard = () => {
                                                             disabled={DisableCards}>
                                                             <input type="file"
                                                                 ref={(ref) => (filePickerRef.current[index] = ref)}
-                                                                value={card.cardImage} onChange={(e) => {
+                                                                value={card.cardImage ?? ""} onChange={(e) => {
                                                                     // This reads and set the card image when selected
                                                                     const file = e.target.files[0];
                                                                     const reader = new FileReader();
