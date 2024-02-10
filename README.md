@@ -2,7 +2,7 @@
 <p align="center">A React.js-powered platform for crafting personalized flashcards</p>
 
 <h2 align='center'>
-<a href='https://flash-card-generator-tbo8.vercel.app/' target="_blank">Check out the demonstration!
+<a href='https://flashcard-generator-c2s3.vercel.app/' target="_blank">Check out the demonstration!
 </a>
 </h2>
 
